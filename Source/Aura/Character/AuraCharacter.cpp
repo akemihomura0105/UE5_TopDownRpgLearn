@@ -3,8 +3,9 @@
 
 #include "AuraCharacter.h"
 
+#include "AbilitySystemComponent.h"
+#include "Aura/Player/AuraPlayerState.h"
 #include "GameFramework/CharacterMovementComponent.h"
-
 
 // Sets default values
 AAuraCharacter::AAuraCharacter()
@@ -21,4 +22,35 @@ AAuraCharacter::AAuraCharacter()
 void AAuraCharacter::BeginPlay()
 {
 	Super::BeginPlay();
+}
+
+void AAuraCharacter::InitAbilityActorInfo()
+{
+	auto PS = GetPlayerState<AAuraPlayerState>();
+	check(PS);
+	AbilitySystemComponent = PS->GetAbilitySystemComponent();
+	AbilitySystemComponent->InitAbilityActorInfo(this, PS);
+	AttributeSet = PS->GetAttributeSet();
+}
+
+void AAuraCharacter::PossessedBy(AController* NewController)
+{
+	Super::PossessedBy(NewController);
+
+	if (GetLocalRole() == ROLE_Authority)
+	{
+		InitAbilityActorInfo();
+	}
+}
+
+void AAuraCharacter::OnRep_PlayerState()
+{
+	Super::OnRep_PlayerState();
+
+	InitAbilityActorInfo();
+}
+
+UAbilitySystemComponent* AAuraCharacter::GetAbilitySystemComponent() const
+{
+	return AbilitySystemComponent;
 }

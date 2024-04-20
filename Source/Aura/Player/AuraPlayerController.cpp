@@ -68,35 +68,17 @@ void AAuraPlayerController::CursorTrace()
 		return;
 	}
 	auto ThisActorInterface = Cast<IEnemyInterface>(CursorHit.GetActor());
-	if (LastHighLightActor == nullptr)
+	if (LastHighLightActor == ThisActorInterface)
 	{
-		if (ThisActorInterface == nullptr)
-		{
-			// do nothing
-		}
-		else
-		{
-			ThisActorInterface->HighlightActor();
-		}
+		return;
 	}
-	else
+	if (LastHighLightActor != nullptr)
 	{
-		if (ThisActorInterface == nullptr)
-		{
-			LastHighLightActor->UnHighlightActor();
-		}
-		else
-		{
-			if (LastHighLightActor != ThisActorInterface)
-			{
-				LastHighLightActor->UnHighlightActor();
-				ThisActorInterface->HighlightActor();
-			}
-			else
-			{
-				// do nothings
-			}
-		}
+		LastHighLightActor->SetActorHighlight(false);
+	}
+	if (ThisActorInterface != nullptr)
+	{
+		ThisActorInterface->SetActorHighlight(true);
 	}
 	LastHighLightActor = ThisActorInterface;
 }

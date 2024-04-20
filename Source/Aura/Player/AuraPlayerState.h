@@ -4,32 +4,28 @@
 
 #include "CoreMinimal.h"
 #include "AbilitySystemInterface.h"
-#include "AuraCharacterBase.h"
-#include "AuraCharacter.generated.h"
+#include "GameFramework/PlayerState.h"
+#include "AuraPlayerState.generated.h"
 
-class UAbilitySystemComponent;
 class UAttributeSet;
-
+class UAbilitySystemComponent;
+/**
+ * 
+ */
 UCLASS()
-class AURA_API AAuraCharacter : public AAuraCharacterBase, public IAbilitySystemInterface
+class AURA_API AAuraPlayerState : public APlayerState, public IAbilitySystemInterface
 {
 	GENERATED_BODY()
-
 public:
-	AAuraCharacter();
-	virtual void PossessedBy(AController* NewController) override;
-	virtual void OnRep_PlayerState() override;
+	AAuraPlayerState();
 	virtual UAbilitySystemComponent* GetAbilitySystemComponent() const override;
+	virtual UAttributeSet* GetAttributeSet() const;
 
 protected:
-	virtual void BeginPlay() override;
-
 	UPROPERTY()
 	TObjectPtr<UAbilitySystemComponent> AbilitySystemComponent;
 
 	UPROPERTY()
 	TObjectPtr<UAttributeSet> AttributeSet;
 	
-private:
-	void InitAbilityActorInfo();
 };
