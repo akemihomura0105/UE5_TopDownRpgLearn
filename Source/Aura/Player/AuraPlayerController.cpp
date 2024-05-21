@@ -3,9 +3,13 @@
 
 #include "AuraPlayerController.h"
 
+#include "AuraPlayerState.h"
 #include "EnhancedInputComponent.h"
 #include "EnhancedInputSubsystems.h"
-#include "Aura/Interaction/EnemyInterface.h"
+#include "Aura/Interface/EnemyInterface.h"
+#include "Aura/UI/WidgetController/AuraWidgetController.h"
+#include "Aura/UI/HUD/AuraHud.h"
+#include "Aura/UI/WidgetController/AuraWidgetControllerParams.h"
 
 AAuraPlayerController::AAuraPlayerController()
 {
@@ -17,9 +21,10 @@ void AAuraPlayerController::BeginPlay()
 	Super::BeginPlay();
 
 	check(AuraContext);
-	auto Subsystem = ULocalPlayer::GetSubsystem<UEnhancedInputLocalPlayerSubsystem>(GetLocalPlayer());
-	check(Subsystem);
-	Subsystem->AddMappingContext(AuraContext, 0);
+	if (auto Subsystem = ULocalPlayer::GetSubsystem<UEnhancedInputLocalPlayerSubsystem>(GetLocalPlayer()))
+	{
+		Subsystem->AddMappingContext(AuraContext, 0);
+	}
 
 	bShowMouseCursor = true;
 	DefaultMouseCursor = EMouseCursor::Default;
@@ -45,6 +50,13 @@ void AAuraPlayerController::PlayerTick(float DeltaTime)
 	CursorTrace();
 }
 
+void AAuraPlayerController::OnRep_PlayerState()
+{
+	Super::OnRep_PlayerState();
+
+	InitHUD();
+}
+
 void AAuraPlayerController::Move(const FInputActionValue& InputActionValue)
 {
 	if (auto ControlledPawn = GetPawn<APawn>())
@@ -67,7 +79,7 @@ void AAuraPlayerController::CursorTrace()
 	{
 		return;
 	}
-	auto ThisActorInterface = Cast<IEnemyInterface>(CursorHit.GetActor());
+	TScriptInterface<IEnemyInterface> ThisActorInterface = CursorHit.GetActor();
 	if (LastHighLightActor == ThisActorInterface)
 	{
 		return;
@@ -81,4 +93,17 @@ void AAuraPlayerController::CursorTrace()
 		ThisActorInterface->SetActorHighlight(true);
 	}
 	LastHighLightActor = ThisActorInterface;
+}
+
+void AAuraPlayerController::InitHUD()
+{
+	FAuraWidgetControllerParams Params;
+	auto PS = GetPlayerState<AAuraPlayerState>();
+	check(PS);
+	Params.PlayerController = this;
+	Params.PlayerState = PS;
+	Params.AbilitySystemComponent = PS->GetAbilitySystemComponent();
+	Params.AttributeSet = PS->GetAttributeSet();
+	auto AuraHud = Cast<AAuraHud>(GetHUD());
+	AuraHud->InitOverlay(Params);
 }

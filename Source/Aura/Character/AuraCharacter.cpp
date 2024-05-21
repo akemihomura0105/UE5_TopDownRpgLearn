@@ -4,6 +4,7 @@
 #include "AuraCharacter.h"
 
 #include "AbilitySystemComponent.h"
+#include "Aura/AbilitySystem/AuraAbilitySystemComponent.h"
 #include "Aura/Player/AuraPlayerState.h"
 #include "GameFramework/CharacterMovementComponent.h"
 
@@ -24,13 +25,21 @@ void AAuraCharacter::BeginPlay()
 	Super::BeginPlay();
 }
 
+int32 AAuraCharacter::GetCombatLevel()
+{
+	auto AuraPlayerState = GetPlayerState<AAuraPlayerState>();
+	check(AuraPlayerState);
+	return AuraPlayerState->GetCombatLevel();
+}
+
 void AAuraCharacter::InitAbilityActorInfo()
 {
-	auto PS = GetPlayerState<AAuraPlayerState>();
-	check(PS);
-	AbilitySystemComponent = PS->GetAbilitySystemComponent();
-	AbilitySystemComponent->InitAbilityActorInfo(this, PS);
-	AttributeSet = PS->GetAttributeSet();
+	auto AuraPlayerState = GetPlayerState<AAuraPlayerState>();
+	check(AuraPlayerState);
+	AbilitySystemComponent = AuraPlayerState->GetAbilitySystemComponent();
+	AbilitySystemComponent->InitAbilityActorInfo(this, AuraPlayerState);
+	Cast<UAuraAbilitySystemComponent>(AbilitySystemComponent)->OnActorInfoSet();
+	AttributeSet = AuraPlayerState->GetAttributeSet();
 }
 
 void AAuraCharacter::PossessedBy(AController* NewController)
@@ -40,6 +49,7 @@ void AAuraCharacter::PossessedBy(AController* NewController)
 	if (GetLocalRole() == ROLE_Authority)
 	{
 		InitAbilityActorInfo();
+		InitializeAttribute();
 	}
 }
 

@@ -4,7 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "AuraCharacterBase.h"
-#include "Aura/Interaction/EnemyInterface.h"
+#include "Aura/Interface/EnemyInterface.h"
 #include "AuraEnemy.generated.h"
 
 class UAbilitySystemComponent;
@@ -17,11 +17,15 @@ class AURA_API AAuraEnemy : public AAuraCharacterBase, public IEnemyInterface
 
 public:
 	AAuraEnemy();
+	virtual UAbilitySystemComponent* GetAbilitySystemComponent() const override;
 	TArray<USkeletalMeshComponent*> GetHighLightMeshComponentArray();
-	virtual void BeginPlay() override;
 	virtual void SetActorHighlight(bool bIsHighLight) override;
-
+	virtual int32 GetCombatLevel() override;
+	virtual void BeginPlay() override;
+	
 protected:
+	virtual void InitAbilityActorInfo() override;
+	
 	UPROPERTY()
 	TObjectPtr<UAbilitySystemComponent> AbilitySystemComponent;
 
@@ -30,4 +34,8 @@ protected:
 	
 	UPROPERTY(BlueprintReadOnly)
 	bool bHighlighted = false;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly)
+	int32 Level = 1; 
+	
 };

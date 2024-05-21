@@ -3,7 +3,7 @@
 
 #include "AuraEnemy.h"
 
-#include "Aura/AbilitySystem/AuraAbilitySystem.h"
+#include "Aura/AbilitySystem/AuraAbilitySystemComponent.h"
 #include "Aura/AbilitySystem/AuraAttributeSet.h"
 
 
@@ -11,24 +11,20 @@ AAuraEnemy::AAuraEnemy()
 {
 	GetMesh()->SetCollisionResponseToChannel(ECC_Visibility, ECR_Block);
 
-	AbilitySystemComponent = CreateDefaultSubobject<UAuraAbilitySystem>("AbilitySystem");
+	AbilitySystemComponent = CreateDefaultSubobject<UAuraAbilitySystemComponent>("AbilitySystem");
 	AbilitySystemComponent->SetIsReplicated(true);
 	AbilitySystemComponent->SetReplicationMode(EGameplayEffectReplicationMode::Minimal);
 	AttributeSet = CreateDefaultSubobject<UAuraAttributeSet>("AttributeSet");
 }
 
+UAbilitySystemComponent* AAuraEnemy::GetAbilitySystemComponent() const
+{
+	return AbilitySystemComponent;
+}
+
 TArray<USkeletalMeshComponent*> AAuraEnemy::GetHighLightMeshComponentArray()
 {
 	return {GetMesh(), Weapon};
-}
-
-void AAuraEnemy::BeginPlay()
-{
-	Super::BeginPlay();
-	if (AbilitySystemComponent)
-	{
-		AbilitySystemComponent->InitAbilityActorInfo(this, this);
-	}
 }
 
 void AAuraEnemy::SetActorHighlight(bool bIsHighLight)
@@ -56,4 +52,21 @@ void AAuraEnemy::SetActorHighlight(bool bIsHighLight)
 			HightlightMesh->SetRenderCustomDepth(false);
 		}
 	}
+}
+
+int32 AAuraEnemy::GetCombatLevel()
+{
+	return Level;
+}
+
+void AAuraEnemy::BeginPlay()
+{
+	Super::BeginPlay();
+	InitAbilityActorInfo();
+}
+
+void AAuraEnemy::InitAbilityActorInfo()
+{
+	AbilitySystemComponent->InitAbilityActorInfo(this, this);
+	Cast<UAuraAbilitySystemComponent>(AbilitySystemComponent)->OnActorInfoSet();
 }

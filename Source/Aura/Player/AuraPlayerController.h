@@ -24,10 +24,12 @@ protected:
 	virtual void BeginPlay() override;
 	virtual void SetupInputComponent() override;
 	virtual void PlayerTick(float DeltaTime) override;
+	virtual void OnRep_PlayerState() override;
 	
 private:
 	void Move(const FInputActionValue& InputActionValue);
-	void CursorTrace(); 
+	void CursorTrace();
+	void InitHUD();
 	
 	UPROPERTY(EditAnywhere, Category="Input")
 	TObjectPtr<UInputMappingContext> AuraContext;
@@ -35,5 +37,5 @@ private:
 	UPROPERTY(EditAnywhere, Category="Input")
 	TObjectPtr<UInputAction> MoveAction;
 
-	IEnemyInterface* LastHighLightActor; 
+	TScriptInterface<IEnemyInterface> LastHighLightActor; 
 };

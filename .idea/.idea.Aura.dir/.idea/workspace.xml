@@ -16,30 +16,90 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="df17b2b2-72da-4a41-8dd1-81fc640ba01d" name="更改" comment="第13号课程">
-      <change afterPath="$PROJECT_DIR$/Source/Aura/AbilitySystem/AuraAbilitySystem.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/Aura/AbilitySystem/AuraAbilitySystem.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/Aura/AbilitySystem/AuraAttributeSet.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/Aura/AbilitySystem/AuraAttributeSet.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/Aura/Actor/AuraEffectActor.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/Aura/Actor/AuraEffectActor.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/Aura/Player/AuraPlayerState.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/Aura/Player/AuraPlayerState.h" afterDir="false" />
+    <list default="true" id="df17b2b2-72da-4a41-8dd1-81fc640ba01d" name="更改" comment="">
+      <change afterPath="$PROJECT_DIR$/Config/DefaultGameplayTags.ini" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Blueprints/AbilitySystem/Data/DA_AttributeInfo.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Blueprints/AbilitySystem/GameplayEffect/InitializeAttributes/GE_AuraPrimaryAttributeInitialize.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Blueprints/AbilitySystem/GameplayEffect/InitializeAttributes/GE_AuraSecondaryAttributeInitialize.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Blueprints/AbilitySystem/GameplayEffect/InitializeAttributes/GE_AuraVitalAttributeInitialize.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Blueprints/Actor/Area/BP_FireArea.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Blueprints/Actor/Area/BP_TestArea.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Blueprints/Actor/Area/GE_FireDamage.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Blueprints/Actor/Area/GE_Test.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Blueprints/Actor/Crystal/BP_HealthCrystal.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Blueprints/Actor/Crystal/BP_ManaCrystal.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Blueprints/Actor/Crystal/GE_CrystalHeal.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Blueprints/Actor/Crystal/GE_CrystalMana.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Blueprints/Actor/Potion/BP_HealthCrystal.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Blueprints/Actor/Potion/BP_ManaCrystal.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Blueprints/Actor/Potion/CT_HealthPotion.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Blueprints/Actor/Potion/CT_ManaPotion.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Blueprints/Actor/Potion/GE_PotionMana.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Blueprints/UI/AttributeMenu/WBP_AttributeMenu.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Blueprints/UI/AttributeMenu/WBP_FrameValue.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Blueprints/UI/AttributeMenu/WBP_TextValueButtonRow.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Blueprints/UI/AttributeMenu/WBP_TextValueRow.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Blueprints/UI/Button/WBP_Button.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Blueprints/UI/Button/WBP_WideButton.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Blueprints/UI/Data/DT_MessageTag.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Blueprints/UI/Data/DT_MessageWidgetData.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Blueprints/UI/Overlay/SubWidget/WBP_EffectMessage.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Blueprints/UI/ProgressBar/WBP_GlobeProgressBar.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Blueprints/UI/WidgetController/BP_AttributeMenuWidgetController.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/Aura/AbilitySystem/AuraAbilitySystemComponent.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/Aura/AbilitySystem/AuraAbilitySystemLibrary.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/Aura/AbilitySystem/AuraAbilitySystemLibrary.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/Aura/AbilitySystem/Data/AttributeInfo.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/Aura/AbilitySystem/Data/AttributeInfo.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/Aura/AbilitySystem/MMC/MMC_MaxHealth.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/Aura/AbilitySystem/MMC/MMC_MaxHealth.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/Aura/AbilitySystem/MMC/MMC_MaxMana.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/Aura/AbilitySystem/MMC/MMC_MaxMana.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/Aura/AuraAssetManager.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/Aura/AuraAssetManager.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/Aura/AuraGameplayTagsManager.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/Aura/AuraGameplayTagsManager.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/Aura/Interface/CombatInterface.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/Aura/Interface/CombatInterface.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/Aura/UI/HUD/AuraHud.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/Aura/UI/HUD/AuraHud.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/Aura/UI/Widget/AuraUserWidget.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/Aura/UI/Widget/AuraUserWidget.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/Aura/UI/WidgetController/AttributeMenuWidgetController.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/Aura/UI/WidgetController/AttributeMenuWidgetController.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/Aura/UI/WidgetController/AuraWidgetController.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/Aura/UI/WidgetController/AuraWidgetController.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/Aura/UI/WidgetController/AuraWidgetControllerParams.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/Aura/UI/WidgetController/AuraWidgetControllerParams.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/Aura/UI/WidgetController/OverlayWidgetController.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/Aura/UI/WidgetController/OverlayWidgetController.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/Aura/UI/WidgetController/UIWidgetRow.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Aura.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Aura.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Aura.uproject" beforeDir="false" afterPath="$PROJECT_DIR$/Aura.uproject" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Config/DefaultEngine.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEngine.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/Materials/PP_Highlight.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Assets/Materials/PP_Highlight.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Character/Goblin_Slingshot/BP_Goblin_Slingshot.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Character/Goblin_Slingshot/BP_Goblin_Slingshot.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Character/Goblin_Spear/BP_Goblin_Spear.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Character/Goblin_Spear/BP_Goblin_Spear.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Config/DefaultGame.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultGame.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Actor/BP_HealthPotion.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Actor/BP_HealthPotion.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Character/Aura/BP_AuraCharacter.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Character/Aura/BP_AuraCharacter.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Blueprints/Game/BP_AuraGameMode.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Game/BP_AuraGameMode.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Maps/StartupMap.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/StartupMap.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Aura/AbilitySystem/AuraAbilitySystem.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Aura/AbilitySystem/AuraAbilitySystem.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Aura/AbilitySystem/AuraAbilitySystemComponent.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Aura/AbilitySystem/AuraAttributeSet.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Aura/AbilitySystem/AuraAttributeSet.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Aura/AbilitySystem/AuraAttributeSet.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Aura/AbilitySystem/AuraAttributeSet.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Aura/Actor/AuraEffectActor.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Aura/Actor/AuraEffectActor.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Aura/Actor/AuraEffectActor.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Aura/Actor/AuraEffectActor.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/Aura/Aura.Build.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Aura/Aura.Build.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/Aura/Character/AuraCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Aura/Character/AuraCharacter.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/Aura/Character/AuraCharacter.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Aura/Character/AuraCharacter.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Aura/Character/AuraCharacterBase.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Aura/Character/AuraCharacterBase.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Aura/Character/AuraCharacterBase.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Aura/Character/AuraCharacterBase.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/Aura/Character/AuraEnemy.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Aura/Character/AuraEnemy.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/Aura/Character/AuraEnemy.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Aura/Character/AuraEnemy.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Aura/Interaction/EnemyInterface.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Aura/Interaction/EnemyInterface.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Aura/Interaction/EnemyInterface.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Aura/Interface/EnemyInterface.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Aura/Interaction/EnemyInterface.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Aura/Interface/EnemyInterface.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/Aura/Player/AuraPlayerController.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Aura/Player/AuraPlayerController.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Aura/Player/AuraPlayerController.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Aura/Player/AuraPlayerController.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Aura/Player/AuraPlayerState.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Aura/Player/AuraPlayerState.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Aura/Player/AuraPlayerState.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Aura/Player/AuraPlayerState.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,45 +109,133 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;akemihomura0105&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/akemihomura0105/UE5_TopDownRpgLearn.git&quot;,
+    &quot;accountId&quot;: &quot;e90f2fa4-4cd0-46c3-bcfc-a5aaf556b1a5&quot;
+  }
+}</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://C:/Program Files/Microsoft Visual Studio/2022/Professional/VC/Tools/MSVC/14.34.31933/include/functional" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../UnrealEngine-5.3.2-source/Engine/Source/ThirdParty/mimalloc/include/mimalloc-internal.h" root0="SKIP_HIGHLIGHTING" />
+  </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="Toolset" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
 }</component>
   <component name="ProjectId" id="2f5DVnjHHr0x9Z0nEC4CmxIz5Yf" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;.NET 项目.AutomationTool.executor&quot;: &quot;Run&quot;,
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Uproject.Aura.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.updates&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    ".NET 项目.AutomationTool.executor": "Run",
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Uproject.Aura.executor": "Run",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.keymap",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;rider.external.source.directories&quot;: [
-      &quot;C:\\Users\\zhang\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\DecompilerCache&quot;,
-      &quot;C:\\Users\\zhang\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\SourcesCache&quot;,
-      &quot;C:\\Users\\zhang\\AppData\\Local\\Symbols\\src&quot;
+  "keyToStringList": {
+    "rider.external.source.directories": [
+      "C:\\Users\\zhang\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache",
+      "C:\\Users\\zhang\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache",
+      "C:\\Users\\zhang\\AppData\\Local\\Symbols\\src"
     ]
   }
-}</component>
+}]]></component>
+  <component name="RunAnythingCache">
+    <myKeys>
+      <visibility group="Grunt" flag="true" />
+      <visibility group="Gulp" flag="true" />
+      <visibility group="HTTP 请求" flag="true" />
+      <visibility group="Node.js" flag="true" />
+      <visibility group="Recent projects" flag="true" />
+      <visibility group="Run configurations" flag="true" />
+      <visibility group="npm" flag="true" />
+      <visibility group="yarn" flag="true" />
+      <visibility group="最近的项目" flag="true" />
+      <visibility group="运行配置" flag="true" />
+    </myKeys>
+  </component>
   <component name="RunManager" selected="Uproject.Aura">
     <configuration name="UnrealAndroidFileTool: UAFT-linux-x64" type="DotNetMsBuildPublish" factoryName="Publish to IIS">
       <riderPublish publish_profile="UAFT-linux-x64.pubxml" pubxml_path="$PROJECT_DIR$/../UnrealEngine-5.3.2-source/Engine/Source/Programs/UnrealAndroidFileTool/Properties/PublishProfiles/UAFT-linux-x64.pubxml" uuid_high="7955553615007426355" uuid_low="1901880150328835101" />
@@ -189,409 +337,483 @@
       </method>
     </configuration>
     <configuration name="Aura" type="Uproject" factoryName="rider.uproject">
-      <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/Aura.uproject" />
-      <configuration_2>
+      <configuration_1>
         <option name="CONFIGURATION" value="Debug Client" />
         <option name="PLATFORM" value="Win64" />
+        <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/Aura.uproject" />
+        <option name="CURRENT_LAUNCH_PROFILE" value="Local" />
         <option name="EXECUTABLE_PATH" value="E:\Aura\Binaries\Win64\AuraClient-Win64-Debug.exe" />
-        <option name="WORKING_DIRECTORY" value="E:\UnrealEngine-5.3.2-source" />
         <option name="MANDATORY_PROGRAM_PARAMETERS" value=" &quot;E:\Aura\Aura.uproject&quot;" />
         <option name="CUSTOM_PROGRAM_PARAMETERS" value="" />
+        <option name="WORKING_DIRECTORY" value="E:\UnrealEngine-5.3.2-source" />
+        <option name="PASS_PARENT_ENVS" value="1" />
+        <option name="USE_EXTERNAL_CONSOLE" value="0" />
+        <option name="TERMINAL_INTERACTION_BEHAVIOR" value="FORCE_CONSOLE" />
+      </configuration_1>
+      <configuration_2>
+        <option name="CONFIGURATION" value="Debug Editor" />
+        <option name="PLATFORM" value="Win64" />
+        <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/Aura.uproject" />
+        <option name="CURRENT_LAUNCH_PROFILE" value="Local" />
+        <option name="EXECUTABLE_PATH" value="E:\UnrealEngine-5.3.2-source\Engine\Binaries\Win64\UnrealEditor-Win64-Debug.exe" />
+        <option name="MANDATORY_PROGRAM_PARAMETERS" value=" &quot;E:\Aura\Aura.uproject&quot;" />
+        <option name="CUSTOM_PROGRAM_PARAMETERS" value="" />
+        <option name="WORKING_DIRECTORY" value="E:\UnrealEngine-5.3.2-source" />
         <option name="PASS_PARENT_ENVS" value="1" />
         <option name="USE_EXTERNAL_CONSOLE" value="0" />
         <option name="TERMINAL_INTERACTION_BEHAVIOR" value="FORCE_CONSOLE" />
       </configuration_2>
       <configuration_3>
-        <option name="CONFIGURATION" value="Debug Editor" />
+        <option name="CONFIGURATION" value="Debug Server" />
         <option name="PLATFORM" value="Win64" />
-        <option name="EXECUTABLE_PATH" value="E:\UnrealEngine-5.3.2-source\Engine\Binaries\Win64\UnrealEditor-Win64-Debug.exe" />
-        <option name="WORKING_DIRECTORY" value="E:\UnrealEngine-5.3.2-source" />
+        <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/Aura.uproject" />
+        <option name="CURRENT_LAUNCH_PROFILE" value="Local" />
+        <option name="EXECUTABLE_PATH" value="E:\Aura\Binaries\Win64\AuraServer-Win64-Debug.exe" />
         <option name="MANDATORY_PROGRAM_PARAMETERS" value=" &quot;E:\Aura\Aura.uproject&quot;" />
         <option name="CUSTOM_PROGRAM_PARAMETERS" value="" />
+        <option name="WORKING_DIRECTORY" value="E:\UnrealEngine-5.3.2-source" />
         <option name="PASS_PARENT_ENVS" value="1" />
         <option name="USE_EXTERNAL_CONSOLE" value="0" />
         <option name="TERMINAL_INTERACTION_BEHAVIOR" value="FORCE_CONSOLE" />
       </configuration_3>
       <configuration_4>
-        <option name="CONFIGURATION" value="Debug Server" />
+        <option name="CONFIGURATION" value="DebugGame Client" />
         <option name="PLATFORM" value="Win64" />
-        <option name="EXECUTABLE_PATH" value="E:\Aura\Binaries\Win64\AuraServer-Win64-Debug.exe" />
-        <option name="WORKING_DIRECTORY" value="E:\UnrealEngine-5.3.2-source" />
+        <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/Aura.uproject" />
+        <option name="CURRENT_LAUNCH_PROFILE" value="Local" />
+        <option name="EXECUTABLE_PATH" value="E:\Aura\Binaries\Win64\AuraClient-Win64-DebugGame.exe" />
         <option name="MANDATORY_PROGRAM_PARAMETERS" value=" &quot;E:\Aura\Aura.uproject&quot;" />
         <option name="CUSTOM_PROGRAM_PARAMETERS" value="" />
+        <option name="WORKING_DIRECTORY" value="E:\UnrealEngine-5.3.2-source" />
         <option name="PASS_PARENT_ENVS" value="1" />
         <option name="USE_EXTERNAL_CONSOLE" value="0" />
         <option name="TERMINAL_INTERACTION_BEHAVIOR" value="FORCE_CONSOLE" />
       </configuration_4>
       <configuration_5>
-        <option name="CONFIGURATION" value="DebugGame Client" />
+        <option name="CONFIGURATION" value="DebugGame Editor" />
         <option name="PLATFORM" value="Win64" />
-        <option name="EXECUTABLE_PATH" value="E:\Aura\Binaries\Win64\AuraClient-Win64-DebugGame.exe" />
-        <option name="WORKING_DIRECTORY" value="E:\UnrealEngine-5.3.2-source" />
+        <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/Aura.uproject" />
+        <option name="CURRENT_LAUNCH_PROFILE" value="Local" />
+        <option name="EXECUTABLE_PATH" value="E:\UnrealEngine-5.3.2-source\Engine\Binaries\Win64\UnrealEditor-Win64-DebugGame.exe" />
         <option name="MANDATORY_PROGRAM_PARAMETERS" value=" &quot;E:\Aura\Aura.uproject&quot;" />
         <option name="CUSTOM_PROGRAM_PARAMETERS" value="" />
+        <option name="WORKING_DIRECTORY" value="E:\UnrealEngine-5.3.2-source" />
         <option name="PASS_PARENT_ENVS" value="1" />
         <option name="USE_EXTERNAL_CONSOLE" value="0" />
         <option name="TERMINAL_INTERACTION_BEHAVIOR" value="FORCE_CONSOLE" />
       </configuration_5>
       <configuration_6>
-        <option name="CONFIGURATION" value="DebugGame Editor" />
+        <option name="CONFIGURATION" value="DebugGame Server" />
         <option name="PLATFORM" value="Win64" />
-        <option name="EXECUTABLE_PATH" value="E:\UnrealEngine-5.3.2-source\Engine\Binaries\Win64\UnrealEditor-Win64-DebugGame.exe" />
-        <option name="WORKING_DIRECTORY" value="E:\UnrealEngine-5.3.2-source" />
+        <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/Aura.uproject" />
+        <option name="CURRENT_LAUNCH_PROFILE" value="Local" />
+        <option name="EXECUTABLE_PATH" value="E:\Aura\Binaries\Win64\AuraServer-Win64-DebugGame.exe" />
         <option name="MANDATORY_PROGRAM_PARAMETERS" value=" &quot;E:\Aura\Aura.uproject&quot;" />
         <option name="CUSTOM_PROGRAM_PARAMETERS" value="" />
+        <option name="WORKING_DIRECTORY" value="E:\UnrealEngine-5.3.2-source" />
         <option name="PASS_PARENT_ENVS" value="1" />
         <option name="USE_EXTERNAL_CONSOLE" value="0" />
         <option name="TERMINAL_INTERACTION_BEHAVIOR" value="FORCE_CONSOLE" />
       </configuration_6>
       <configuration_7>
-        <option name="CONFIGURATION" value="DebugGame Server" />
+        <option name="CONFIGURATION" value="DebugGame" />
         <option name="PLATFORM" value="Win64" />
-        <option name="EXECUTABLE_PATH" value="E:\Aura\Binaries\Win64\AuraServer-Win64-DebugGame.exe" />
-        <option name="WORKING_DIRECTORY" value="E:\UnrealEngine-5.3.2-source" />
-        <option name="MANDATORY_PROGRAM_PARAMETERS" value=" &quot;E:\Aura\Aura.uproject&quot;" />
+        <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/Aura.uproject" />
+        <option name="CURRENT_LAUNCH_PROFILE" value="Local" />
+        <option name="EXECUTABLE_PATH" value="E:\Aura\Binaries\Win64\Aura-Win64-DebugGame.exe" />
+        <option name="MANDATORY_PROGRAM_PARAMETERS" value="" />
         <option name="CUSTOM_PROGRAM_PARAMETERS" value="" />
+        <option name="WORKING_DIRECTORY" value="E:\UnrealEngine-5.3.2-source" />
         <option name="PASS_PARENT_ENVS" value="1" />
         <option name="USE_EXTERNAL_CONSOLE" value="0" />
         <option name="TERMINAL_INTERACTION_BEHAVIOR" value="FORCE_CONSOLE" />
       </configuration_7>
       <configuration_8>
-        <option name="CONFIGURATION" value="DebugGame" />
+        <option name="CONFIGURATION" value="Debug" />
         <option name="PLATFORM" value="Win64" />
-        <option name="EXECUTABLE_PATH" value="E:\Aura\Binaries\Win64\Aura-Win64-DebugGame.exe" />
-        <option name="WORKING_DIRECTORY" value="E:\UnrealEngine-5.3.2-source" />
+        <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/Aura.uproject" />
+        <option name="CURRENT_LAUNCH_PROFILE" value="Local" />
+        <option name="EXECUTABLE_PATH" value="E:\Aura\Binaries\Win64\Aura-Win64-Debug.exe" />
         <option name="MANDATORY_PROGRAM_PARAMETERS" value="" />
         <option name="CUSTOM_PROGRAM_PARAMETERS" value="" />
+        <option name="WORKING_DIRECTORY" value="E:\UnrealEngine-5.3.2-source" />
         <option name="PASS_PARENT_ENVS" value="1" />
         <option name="USE_EXTERNAL_CONSOLE" value="0" />
         <option name="TERMINAL_INTERACTION_BEHAVIOR" value="FORCE_CONSOLE" />
       </configuration_8>
       <configuration_9>
-        <option name="CONFIGURATION" value="Debug" />
+        <option name="CONFIGURATION" value="Development Client" />
         <option name="PLATFORM" value="Win64" />
-        <option name="EXECUTABLE_PATH" value="E:\Aura\Binaries\Win64\Aura-Win64-Debug.exe" />
-        <option name="WORKING_DIRECTORY" value="E:\UnrealEngine-5.3.2-source" />
-        <option name="MANDATORY_PROGRAM_PARAMETERS" value="" />
+        <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/Aura.uproject" />
+        <option name="CURRENT_LAUNCH_PROFILE" value="Local" />
+        <option name="EXECUTABLE_PATH" value="E:\Aura\Binaries\Win64\AuraClient.exe" />
+        <option name="MANDATORY_PROGRAM_PARAMETERS" value=" &quot;E:\Aura\Aura.uproject&quot;" />
         <option name="CUSTOM_PROGRAM_PARAMETERS" value="" />
+        <option name="WORKING_DIRECTORY" value="E:\UnrealEngine-5.3.2-source" />
         <option name="PASS_PARENT_ENVS" value="1" />
         <option name="USE_EXTERNAL_CONSOLE" value="0" />
         <option name="TERMINAL_INTERACTION_BEHAVIOR" value="FORCE_CONSOLE" />
       </configuration_9>
       <configuration_10>
-        <option name="CONFIGURATION" value="Development Client" />
+        <option name="CONFIGURATION" value="Development Editor" />
         <option name="PLATFORM" value="Win64" />
-        <option name="EXECUTABLE_PATH" value="E:\Aura\Binaries\Win64\AuraClient.exe" />
-        <option name="WORKING_DIRECTORY" value="E:\UnrealEngine-5.3.2-source" />
+        <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/Aura.uproject" />
+        <option name="CURRENT_LAUNCH_PROFILE" value="Local" />
+        <option name="EXECUTABLE_PATH" value="E:\UnrealEngine-5.3.2-source\Engine\Binaries\Win64\UnrealEditor.exe" />
         <option name="MANDATORY_PROGRAM_PARAMETERS" value=" &quot;E:\Aura\Aura.uproject&quot;" />
         <option name="CUSTOM_PROGRAM_PARAMETERS" value="" />
+        <option name="WORKING_DIRECTORY" value="E:\UnrealEngine-5.3.2-source" />
         <option name="PASS_PARENT_ENVS" value="1" />
         <option name="USE_EXTERNAL_CONSOLE" value="0" />
         <option name="TERMINAL_INTERACTION_BEHAVIOR" value="FORCE_CONSOLE" />
       </configuration_10>
       <configuration_11>
-        <option name="CONFIGURATION" value="Development Editor" />
+        <option name="CONFIGURATION" value="Development Server" />
         <option name="PLATFORM" value="Win64" />
-        <option name="EXECUTABLE_PATH" value="E:\UnrealEngine-5.3.2-source\Engine\Binaries\Win64\UnrealEditor.exe" />
-        <option name="WORKING_DIRECTORY" value="E:\UnrealEngine-5.3.2-source" />
+        <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/Aura.uproject" />
+        <option name="CURRENT_LAUNCH_PROFILE" value="Local" />
+        <option name="EXECUTABLE_PATH" value="E:\Aura\Binaries\Win64\AuraServer.exe" />
         <option name="MANDATORY_PROGRAM_PARAMETERS" value=" &quot;E:\Aura\Aura.uproject&quot;" />
         <option name="CUSTOM_PROGRAM_PARAMETERS" value="" />
+        <option name="WORKING_DIRECTORY" value="E:\UnrealEngine-5.3.2-source" />
         <option name="PASS_PARENT_ENVS" value="1" />
         <option name="USE_EXTERNAL_CONSOLE" value="0" />
         <option name="TERMINAL_INTERACTION_BEHAVIOR" value="FORCE_CONSOLE" />
       </configuration_11>
       <configuration_12>
-        <option name="CONFIGURATION" value="Development Server" />
+        <option name="CONFIGURATION" value="Development" />
         <option name="PLATFORM" value="Win64" />
-        <option name="EXECUTABLE_PATH" value="E:\Aura\Binaries\Win64\AuraServer.exe" />
-        <option name="WORKING_DIRECTORY" value="E:\UnrealEngine-5.3.2-source" />
-        <option name="MANDATORY_PROGRAM_PARAMETERS" value=" &quot;E:\Aura\Aura.uproject&quot;" />
+        <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/Aura.uproject" />
+        <option name="CURRENT_LAUNCH_PROFILE" value="Local" />
+        <option name="EXECUTABLE_PATH" value="E:\Aura\Binaries\Win64\Aura.exe" />
+        <option name="MANDATORY_PROGRAM_PARAMETERS" value="" />
         <option name="CUSTOM_PROGRAM_PARAMETERS" value="" />
+        <option name="WORKING_DIRECTORY" value="E:\UnrealEngine-5.3.2-source" />
         <option name="PASS_PARENT_ENVS" value="1" />
         <option name="USE_EXTERNAL_CONSOLE" value="0" />
         <option name="TERMINAL_INTERACTION_BEHAVIOR" value="FORCE_CONSOLE" />
       </configuration_12>
       <configuration_13>
-        <option name="CONFIGURATION" value="Development" />
+        <option name="CONFIGURATION" value="Shipping Client" />
         <option name="PLATFORM" value="Win64" />
-        <option name="EXECUTABLE_PATH" value="E:\Aura\Binaries\Win64\Aura.exe" />
-        <option name="WORKING_DIRECTORY" value="E:\UnrealEngine-5.3.2-source" />
-        <option name="MANDATORY_PROGRAM_PARAMETERS" value="" />
+        <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/Aura.uproject" />
+        <option name="CURRENT_LAUNCH_PROFILE" value="Local" />
+        <option name="EXECUTABLE_PATH" value="E:\Aura\Binaries\Win64\AuraClient-Win64-Shipping.exe" />
+        <option name="MANDATORY_PROGRAM_PARAMETERS" value=" &quot;E:\Aura\Aura.uproject&quot;" />
         <option name="CUSTOM_PROGRAM_PARAMETERS" value="" />
+        <option name="WORKING_DIRECTORY" value="E:\UnrealEngine-5.3.2-source" />
         <option name="PASS_PARENT_ENVS" value="1" />
         <option name="USE_EXTERNAL_CONSOLE" value="0" />
         <option name="TERMINAL_INTERACTION_BEHAVIOR" value="FORCE_CONSOLE" />
       </configuration_13>
       <configuration_14>
-        <option name="CONFIGURATION" value="Shipping Client" />
+        <option name="CONFIGURATION" value="Shipping Server" />
         <option name="PLATFORM" value="Win64" />
-        <option name="EXECUTABLE_PATH" value="E:\Aura\Binaries\Win64\AuraClient-Win64-Shipping.exe" />
-        <option name="WORKING_DIRECTORY" value="E:\UnrealEngine-5.3.2-source" />
+        <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/Aura.uproject" />
+        <option name="CURRENT_LAUNCH_PROFILE" value="Local" />
+        <option name="EXECUTABLE_PATH" value="E:\Aura\Binaries\Win64\AuraServer-Win64-Shipping.exe" />
         <option name="MANDATORY_PROGRAM_PARAMETERS" value=" &quot;E:\Aura\Aura.uproject&quot;" />
         <option name="CUSTOM_PROGRAM_PARAMETERS" value="" />
+        <option name="WORKING_DIRECTORY" value="E:\UnrealEngine-5.3.2-source" />
         <option name="PASS_PARENT_ENVS" value="1" />
         <option name="USE_EXTERNAL_CONSOLE" value="0" />
         <option name="TERMINAL_INTERACTION_BEHAVIOR" value="FORCE_CONSOLE" />
       </configuration_14>
       <configuration_15>
-        <option name="CONFIGURATION" value="Shipping Server" />
+        <option name="CONFIGURATION" value="Shipping" />
         <option name="PLATFORM" value="Win64" />
-        <option name="EXECUTABLE_PATH" value="E:\Aura\Binaries\Win64\AuraServer-Win64-Shipping.exe" />
-        <option name="WORKING_DIRECTORY" value="E:\UnrealEngine-5.3.2-source" />
-        <option name="MANDATORY_PROGRAM_PARAMETERS" value=" &quot;E:\Aura\Aura.uproject&quot;" />
+        <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/Aura.uproject" />
+        <option name="CURRENT_LAUNCH_PROFILE" value="Local" />
+        <option name="EXECUTABLE_PATH" value="E:\Aura\Binaries\Win64\Aura-Win64-Shipping.exe" />
+        <option name="MANDATORY_PROGRAM_PARAMETERS" value="" />
         <option name="CUSTOM_PROGRAM_PARAMETERS" value="" />
+        <option name="WORKING_DIRECTORY" value="E:\UnrealEngine-5.3.2-source" />
         <option name="PASS_PARENT_ENVS" value="1" />
         <option name="USE_EXTERNAL_CONSOLE" value="0" />
         <option name="TERMINAL_INTERACTION_BEHAVIOR" value="FORCE_CONSOLE" />
       </configuration_15>
       <configuration_16>
-        <option name="CONFIGURATION" value="Shipping" />
+        <option name="CONFIGURATION" value="Test Client" />
         <option name="PLATFORM" value="Win64" />
-        <option name="EXECUTABLE_PATH" value="E:\Aura\Binaries\Win64\Aura-Win64-Shipping.exe" />
-        <option name="WORKING_DIRECTORY" value="E:\UnrealEngine-5.3.2-source" />
-        <option name="MANDATORY_PROGRAM_PARAMETERS" value="" />
+        <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/Aura.uproject" />
+        <option name="CURRENT_LAUNCH_PROFILE" value="Local" />
+        <option name="EXECUTABLE_PATH" value="E:\Aura\Binaries\Win64\AuraClient-Win64-Test.exe" />
+        <option name="MANDATORY_PROGRAM_PARAMETERS" value=" &quot;E:\Aura\Aura.uproject&quot;" />
         <option name="CUSTOM_PROGRAM_PARAMETERS" value="" />
+        <option name="WORKING_DIRECTORY" value="E:\UnrealEngine-5.3.2-source" />
         <option name="PASS_PARENT_ENVS" value="1" />
         <option name="USE_EXTERNAL_CONSOLE" value="0" />
         <option name="TERMINAL_INTERACTION_BEHAVIOR" value="FORCE_CONSOLE" />
       </configuration_16>
       <configuration_17>
-        <option name="CONFIGURATION" value="Test Client" />
+        <option name="CONFIGURATION" value="Test Server" />
         <option name="PLATFORM" value="Win64" />
-        <option name="EXECUTABLE_PATH" value="E:\Aura\Binaries\Win64\AuraClient-Win64-Test.exe" />
-        <option name="WORKING_DIRECTORY" value="E:\UnrealEngine-5.3.2-source" />
+        <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/Aura.uproject" />
+        <option name="CURRENT_LAUNCH_PROFILE" value="Local" />
+        <option name="EXECUTABLE_PATH" value="E:\Aura\Binaries\Win64\AuraServer-Win64-Test.exe" />
         <option name="MANDATORY_PROGRAM_PARAMETERS" value=" &quot;E:\Aura\Aura.uproject&quot;" />
         <option name="CUSTOM_PROGRAM_PARAMETERS" value="" />
+        <option name="WORKING_DIRECTORY" value="E:\UnrealEngine-5.3.2-source" />
         <option name="PASS_PARENT_ENVS" value="1" />
         <option name="USE_EXTERNAL_CONSOLE" value="0" />
         <option name="TERMINAL_INTERACTION_BEHAVIOR" value="FORCE_CONSOLE" />
       </configuration_17>
       <configuration_18>
-        <option name="CONFIGURATION" value="Test Server" />
+        <option name="CONFIGURATION" value="Test" />
         <option name="PLATFORM" value="Win64" />
-        <option name="EXECUTABLE_PATH" value="E:\Aura\Binaries\Win64\AuraServer-Win64-Test.exe" />
-        <option name="WORKING_DIRECTORY" value="E:\UnrealEngine-5.3.2-source" />
-        <option name="MANDATORY_PROGRAM_PARAMETERS" value=" &quot;E:\Aura\Aura.uproject&quot;" />
+        <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/Aura.uproject" />
+        <option name="CURRENT_LAUNCH_PROFILE" value="Local" />
+        <option name="EXECUTABLE_PATH" value="E:\Aura\Binaries\Win64\Aura-Win64-Test.exe" />
+        <option name="MANDATORY_PROGRAM_PARAMETERS" value="" />
         <option name="CUSTOM_PROGRAM_PARAMETERS" value="" />
+        <option name="WORKING_DIRECTORY" value="E:\UnrealEngine-5.3.2-source" />
         <option name="PASS_PARENT_ENVS" value="1" />
         <option name="USE_EXTERNAL_CONSOLE" value="0" />
         <option name="TERMINAL_INTERACTION_BEHAVIOR" value="FORCE_CONSOLE" />
       </configuration_18>
-      <configuration_19>
-        <option name="CONFIGURATION" value="Test" />
-        <option name="PLATFORM" value="Win64" />
-        <option name="EXECUTABLE_PATH" value="E:\Aura\Binaries\Win64\Aura-Win64-Test.exe" />
-        <option name="WORKING_DIRECTORY" value="E:\UnrealEngine-5.3.2-source" />
-        <option name="MANDATORY_PROGRAM_PARAMETERS" value="" />
-        <option name="CUSTOM_PROGRAM_PARAMETERS" value="" />
-        <option name="PASS_PARENT_ENVS" value="1" />
-        <option name="USE_EXTERNAL_CONSOLE" value="0" />
-        <option name="TERMINAL_INTERACTION_BEHAVIOR" value="FORCE_CONSOLE" />
-      </configuration_19>
+      <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/Aura.uproject" />
+      <option name="AUTO_SELECT_PRIORITY" value="10010" />
       <method v="2">
         <option name="Build" />
       </method>
     </configuration>
     <configuration name="Engine" type="Uproject" factoryName="rider.uproject">
-      <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/../UnrealEngine-5.3.2-source/Engine" />
-      <configuration_2>
+      <configuration_1>
         <option name="CONFIGURATION" value="Debug Client" />
         <option name="PLATFORM" value="Win64" />
+        <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/../UnrealEngine-5.3.2-source/Engine" />
+        <option name="CURRENT_LAUNCH_PROFILE" value="Local" />
         <option name="EXECUTABLE_PATH" value="E:\UnrealEngine-5.3.2-source\Engine\Binaries\Win64\UnrealClient-Win64-Debug.exe" />
-        <option name="WORKING_DIRECTORY" value="E:\UnrealEngine-5.3.2-source" />
         <option name="MANDATORY_PROGRAM_PARAMETERS" value="" />
         <option name="CUSTOM_PROGRAM_PARAMETERS" value="" />
+        <option name="WORKING_DIRECTORY" value="E:\UnrealEngine-5.3.2-source" />
+        <option name="PASS_PARENT_ENVS" value="1" />
+        <option name="USE_EXTERNAL_CONSOLE" value="0" />
+        <option name="TERMINAL_INTERACTION_BEHAVIOR" value="FORCE_CONSOLE" />
+      </configuration_1>
+      <configuration_2>
+        <option name="CONFIGURATION" value="Debug Editor" />
+        <option name="PLATFORM" value="Win64" />
+        <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/../UnrealEngine-5.3.2-source/Engine" />
+        <option name="CURRENT_LAUNCH_PROFILE" value="Local" />
+        <option name="EXECUTABLE_PATH" value="E:\UnrealEngine-5.3.2-source\Engine\Binaries\Win64\UnrealEditor-Win64-Debug.exe" />
+        <option name="MANDATORY_PROGRAM_PARAMETERS" value="" />
+        <option name="CUSTOM_PROGRAM_PARAMETERS" value="" />
+        <option name="WORKING_DIRECTORY" value="E:\UnrealEngine-5.3.2-source" />
         <option name="PASS_PARENT_ENVS" value="1" />
         <option name="USE_EXTERNAL_CONSOLE" value="0" />
         <option name="TERMINAL_INTERACTION_BEHAVIOR" value="FORCE_CONSOLE" />
       </configuration_2>
       <configuration_3>
-        <option name="CONFIGURATION" value="Debug Editor" />
+        <option name="CONFIGURATION" value="Debug Server" />
         <option name="PLATFORM" value="Win64" />
-        <option name="EXECUTABLE_PATH" value="E:\UnrealEngine-5.3.2-source\Engine\Binaries\Win64\UnrealEditor-Win64-Debug.exe" />
-        <option name="WORKING_DIRECTORY" value="E:\UnrealEngine-5.3.2-source" />
+        <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/../UnrealEngine-5.3.2-source/Engine" />
+        <option name="CURRENT_LAUNCH_PROFILE" value="Local" />
+        <option name="EXECUTABLE_PATH" value="E:\UnrealEngine-5.3.2-source\Engine\Binaries\Win64\UnrealServer-Win64-Debug.exe" />
         <option name="MANDATORY_PROGRAM_PARAMETERS" value="" />
         <option name="CUSTOM_PROGRAM_PARAMETERS" value="" />
+        <option name="WORKING_DIRECTORY" value="E:\UnrealEngine-5.3.2-source" />
         <option name="PASS_PARENT_ENVS" value="1" />
         <option name="USE_EXTERNAL_CONSOLE" value="0" />
         <option name="TERMINAL_INTERACTION_BEHAVIOR" value="FORCE_CONSOLE" />
       </configuration_3>
       <configuration_4>
-        <option name="CONFIGURATION" value="Debug Server" />
+        <option name="CONFIGURATION" value="DebugGame Client" />
         <option name="PLATFORM" value="Win64" />
-        <option name="EXECUTABLE_PATH" value="E:\UnrealEngine-5.3.2-source\Engine\Binaries\Win64\UnrealServer-Win64-Debug.exe" />
-        <option name="WORKING_DIRECTORY" value="E:\UnrealEngine-5.3.2-source" />
+        <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/../UnrealEngine-5.3.2-source/Engine" />
+        <option name="CURRENT_LAUNCH_PROFILE" value="Local" />
+        <option name="EXECUTABLE_PATH" value="E:\UnrealEngine-5.3.2-source\Engine\Binaries\Win64\UnrealClient-Win64-DebugGame.exe" />
         <option name="MANDATORY_PROGRAM_PARAMETERS" value="" />
         <option name="CUSTOM_PROGRAM_PARAMETERS" value="" />
+        <option name="WORKING_DIRECTORY" value="E:\UnrealEngine-5.3.2-source" />
         <option name="PASS_PARENT_ENVS" value="1" />
         <option name="USE_EXTERNAL_CONSOLE" value="0" />
         <option name="TERMINAL_INTERACTION_BEHAVIOR" value="FORCE_CONSOLE" />
       </configuration_4>
       <configuration_5>
-        <option name="CONFIGURATION" value="DebugGame Client" />
+        <option name="CONFIGURATION" value="DebugGame Editor" />
         <option name="PLATFORM" value="Win64" />
-        <option name="EXECUTABLE_PATH" value="E:\UnrealEngine-5.3.2-source\Engine\Binaries\Win64\UnrealClient-Win64-DebugGame.exe" />
-        <option name="WORKING_DIRECTORY" value="E:\UnrealEngine-5.3.2-source" />
+        <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/../UnrealEngine-5.3.2-source/Engine" />
+        <option name="CURRENT_LAUNCH_PROFILE" value="Local" />
+        <option name="EXECUTABLE_PATH" value="E:\UnrealEngine-5.3.2-source\Engine\Binaries\Win64\UnrealEditor-Win64-DebugGame.exe" />
         <option name="MANDATORY_PROGRAM_PARAMETERS" value="" />
         <option name="CUSTOM_PROGRAM_PARAMETERS" value="" />
+        <option name="WORKING_DIRECTORY" value="E:\UnrealEngine-5.3.2-source" />
         <option name="PASS_PARENT_ENVS" value="1" />
         <option name="USE_EXTERNAL_CONSOLE" value="0" />
         <option name="TERMINAL_INTERACTION_BEHAVIOR" value="FORCE_CONSOLE" />
       </configuration_5>
       <configuration_6>
-        <option name="CONFIGURATION" value="DebugGame Editor" />
+        <option name="CONFIGURATION" value="DebugGame Server" />
         <option name="PLATFORM" value="Win64" />
-        <option name="EXECUTABLE_PATH" value="E:\UnrealEngine-5.3.2-source\Engine\Binaries\Win64\UnrealEditor-Win64-DebugGame.exe" />
-        <option name="WORKING_DIRECTORY" value="E:\UnrealEngine-5.3.2-source" />
+        <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/../UnrealEngine-5.3.2-source/Engine" />
+        <option name="CURRENT_LAUNCH_PROFILE" value="Local" />
+        <option name="EXECUTABLE_PATH" value="E:\UnrealEngine-5.3.2-source\Engine\Binaries\Win64\UnrealServer-Win64-DebugGame.exe" />
         <option name="MANDATORY_PROGRAM_PARAMETERS" value="" />
         <option name="CUSTOM_PROGRAM_PARAMETERS" value="" />
+        <option name="WORKING_DIRECTORY" value="E:\UnrealEngine-5.3.2-source" />
         <option name="PASS_PARENT_ENVS" value="1" />
         <option name="USE_EXTERNAL_CONSOLE" value="0" />
         <option name="TERMINAL_INTERACTION_BEHAVIOR" value="FORCE_CONSOLE" />
       </configuration_6>
       <configuration_7>
-        <option name="CONFIGURATION" value="DebugGame Server" />
+        <option name="CONFIGURATION" value="DebugGame" />
         <option name="PLATFORM" value="Win64" />
-        <option name="EXECUTABLE_PATH" value="E:\UnrealEngine-5.3.2-source\Engine\Binaries\Win64\UnrealServer-Win64-DebugGame.exe" />
-        <option name="WORKING_DIRECTORY" value="E:\UnrealEngine-5.3.2-source" />
+        <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/../UnrealEngine-5.3.2-source/Engine" />
+        <option name="CURRENT_LAUNCH_PROFILE" value="Local" />
+        <option name="EXECUTABLE_PATH" value="E:\UnrealEngine-5.3.2-source\Engine\Binaries\Win64\UnrealGame-Win64-DebugGame.exe" />
         <option name="MANDATORY_PROGRAM_PARAMETERS" value="" />
         <option name="CUSTOM_PROGRAM_PARAMETERS" value="" />
+        <option name="WORKING_DIRECTORY" value="E:\UnrealEngine-5.3.2-source" />
         <option name="PASS_PARENT_ENVS" value="1" />
         <option name="USE_EXTERNAL_CONSOLE" value="0" />
         <option name="TERMINAL_INTERACTION_BEHAVIOR" value="FORCE_CONSOLE" />
       </configuration_7>
       <configuration_8>
-        <option name="CONFIGURATION" value="DebugGame" />
+        <option name="CONFIGURATION" value="Debug" />
         <option name="PLATFORM" value="Win64" />
-        <option name="EXECUTABLE_PATH" value="E:\UnrealEngine-5.3.2-source\Engine\Binaries\Win64\UnrealGame-Win64-DebugGame.exe" />
-        <option name="WORKING_DIRECTORY" value="E:\UnrealEngine-5.3.2-source" />
+        <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/../UnrealEngine-5.3.2-source/Engine" />
+        <option name="CURRENT_LAUNCH_PROFILE" value="Local" />
+        <option name="EXECUTABLE_PATH" value="E:\UnrealEngine-5.3.2-source\Engine\Binaries\Win64\UnrealGame-Win64-Debug.exe" />
         <option name="MANDATORY_PROGRAM_PARAMETERS" value="" />
         <option name="CUSTOM_PROGRAM_PARAMETERS" value="" />
+        <option name="WORKING_DIRECTORY" value="E:\UnrealEngine-5.3.2-source" />
         <option name="PASS_PARENT_ENVS" value="1" />
         <option name="USE_EXTERNAL_CONSOLE" value="0" />
         <option name="TERMINAL_INTERACTION_BEHAVIOR" value="FORCE_CONSOLE" />
       </configuration_8>
       <configuration_9>
-        <option name="CONFIGURATION" value="Debug" />
+        <option name="CONFIGURATION" value="Development Client" />
         <option name="PLATFORM" value="Win64" />
-        <option name="EXECUTABLE_PATH" value="E:\UnrealEngine-5.3.2-source\Engine\Binaries\Win64\UnrealGame-Win64-Debug.exe" />
-        <option name="WORKING_DIRECTORY" value="E:\UnrealEngine-5.3.2-source" />
+        <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/../UnrealEngine-5.3.2-source/Engine" />
+        <option name="CURRENT_LAUNCH_PROFILE" value="Local" />
+        <option name="EXECUTABLE_PATH" value="E:\UnrealEngine-5.3.2-source\Engine\Binaries\Win64\UnrealClient.exe" />
         <option name="MANDATORY_PROGRAM_PARAMETERS" value="" />
         <option name="CUSTOM_PROGRAM_PARAMETERS" value="" />
+        <option name="WORKING_DIRECTORY" value="E:\UnrealEngine-5.3.2-source" />
         <option name="PASS_PARENT_ENVS" value="1" />
         <option name="USE_EXTERNAL_CONSOLE" value="0" />
         <option name="TERMINAL_INTERACTION_BEHAVIOR" value="FORCE_CONSOLE" />
       </configuration_9>
       <configuration_10>
-        <option name="CONFIGURATION" value="Development Client" />
+        <option name="CONFIGURATION" value="Development Editor" />
         <option name="PLATFORM" value="Win64" />
-        <option name="EXECUTABLE_PATH" value="E:\UnrealEngine-5.3.2-source\Engine\Binaries\Win64\UnrealClient.exe" />
-        <option name="WORKING_DIRECTORY" value="E:\UnrealEngine-5.3.2-source" />
+        <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/../UnrealEngine-5.3.2-source/Engine" />
+        <option name="CURRENT_LAUNCH_PROFILE" value="Local" />
+        <option name="EXECUTABLE_PATH" value="E:\UnrealEngine-5.3.2-source\Engine\Binaries\Win64\UnrealEditor.exe" />
         <option name="MANDATORY_PROGRAM_PARAMETERS" value="" />
         <option name="CUSTOM_PROGRAM_PARAMETERS" value="" />
+        <option name="WORKING_DIRECTORY" value="E:\UnrealEngine-5.3.2-source" />
         <option name="PASS_PARENT_ENVS" value="1" />
         <option name="USE_EXTERNAL_CONSOLE" value="0" />
         <option name="TERMINAL_INTERACTION_BEHAVIOR" value="FORCE_CONSOLE" />
       </configuration_10>
       <configuration_11>
-        <option name="CONFIGURATION" value="Development Editor" />
+        <option name="CONFIGURATION" value="Development Server" />
         <option name="PLATFORM" value="Win64" />
-        <option name="EXECUTABLE_PATH" value="E:\UnrealEngine-5.3.2-source\Engine\Binaries\Win64\UnrealEditor.exe" />
-        <option name="WORKING_DIRECTORY" value="E:\UnrealEngine-5.3.2-source" />
+        <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/../UnrealEngine-5.3.2-source/Engine" />
+        <option name="CURRENT_LAUNCH_PROFILE" value="Local" />
+        <option name="EXECUTABLE_PATH" value="E:\UnrealEngine-5.3.2-source\Engine\Binaries\Win64\UnrealServer.exe" />
         <option name="MANDATORY_PROGRAM_PARAMETERS" value="" />
         <option name="CUSTOM_PROGRAM_PARAMETERS" value="" />
+        <option name="WORKING_DIRECTORY" value="E:\UnrealEngine-5.3.2-source" />
         <option name="PASS_PARENT_ENVS" value="1" />
         <option name="USE_EXTERNAL_CONSOLE" value="0" />
         <option name="TERMINAL_INTERACTION_BEHAVIOR" value="FORCE_CONSOLE" />
       </configuration_11>
       <configuration_12>
-        <option name="CONFIGURATION" value="Development Server" />
+        <option name="CONFIGURATION" value="Development" />
         <option name="PLATFORM" value="Win64" />
-        <option name="EXECUTABLE_PATH" value="E:\UnrealEngine-5.3.2-source\Engine\Binaries\Win64\UnrealServer.exe" />
-        <option name="WORKING_DIRECTORY" value="E:\UnrealEngine-5.3.2-source" />
+        <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/../UnrealEngine-5.3.2-source/Engine" />
+        <option name="CURRENT_LAUNCH_PROFILE" value="Local" />
+        <option name="EXECUTABLE_PATH" value="E:\UnrealEngine-5.3.2-source\Engine\Binaries\Win64\UnrealGame.exe" />
         <option name="MANDATORY_PROGRAM_PARAMETERS" value="" />
         <option name="CUSTOM_PROGRAM_PARAMETERS" value="" />
+        <option name="WORKING_DIRECTORY" value="E:\UnrealEngine-5.3.2-source" />
         <option name="PASS_PARENT_ENVS" value="1" />
         <option name="USE_EXTERNAL_CONSOLE" value="0" />
         <option name="TERMINAL_INTERACTION_BEHAVIOR" value="FORCE_CONSOLE" />
       </configuration_12>
       <configuration_13>
-        <option name="CONFIGURATION" value="Development" />
+        <option name="CONFIGURATION" value="Shipping Client" />
         <option name="PLATFORM" value="Win64" />
-        <option name="EXECUTABLE_PATH" value="E:\UnrealEngine-5.3.2-source\Engine\Binaries\Win64\UnrealGame.exe" />
-        <option name="WORKING_DIRECTORY" value="E:\UnrealEngine-5.3.2-source" />
+        <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/../UnrealEngine-5.3.2-source/Engine" />
+        <option name="CURRENT_LAUNCH_PROFILE" value="Local" />
+        <option name="EXECUTABLE_PATH" value="E:\UnrealEngine-5.3.2-source\Engine\Binaries\Win64\UnrealClient-Win64-Shipping.exe" />
         <option name="MANDATORY_PROGRAM_PARAMETERS" value="" />
         <option name="CUSTOM_PROGRAM_PARAMETERS" value="" />
+        <option name="WORKING_DIRECTORY" value="E:\UnrealEngine-5.3.2-source" />
         <option name="PASS_PARENT_ENVS" value="1" />
         <option name="USE_EXTERNAL_CONSOLE" value="0" />
         <option name="TERMINAL_INTERACTION_BEHAVIOR" value="FORCE_CONSOLE" />
       </configuration_13>
       <configuration_14>
-        <option name="CONFIGURATION" value="Shipping Client" />
+        <option name="CONFIGURATION" value="Shipping Server" />
         <option name="PLATFORM" value="Win64" />
-        <option name="EXECUTABLE_PATH" value="E:\UnrealEngine-5.3.2-source\Engine\Binaries\Win64\UnrealClient-Win64-Shipping.exe" />
-        <option name="WORKING_DIRECTORY" value="E:\UnrealEngine-5.3.2-source" />
+        <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/../UnrealEngine-5.3.2-source/Engine" />
+        <option name="CURRENT_LAUNCH_PROFILE" value="Local" />
+        <option name="EXECUTABLE_PATH" value="E:\UnrealEngine-5.3.2-source\Engine\Binaries\Win64\UnrealServer-Win64-Shipping.exe" />
         <option name="MANDATORY_PROGRAM_PARAMETERS" value="" />
         <option name="CUSTOM_PROGRAM_PARAMETERS" value="" />
+        <option name="WORKING_DIRECTORY" value="E:\UnrealEngine-5.3.2-source" />
         <option name="PASS_PARENT_ENVS" value="1" />
         <option name="USE_EXTERNAL_CONSOLE" value="0" />
         <option name="TERMINAL_INTERACTION_BEHAVIOR" value="FORCE_CONSOLE" />
       </configuration_14>
       <configuration_15>
-        <option name="CONFIGURATION" value="Shipping Server" />
+        <option name="CONFIGURATION" value="Shipping" />
         <option name="PLATFORM" value="Win64" />
-        <option name="EXECUTABLE_PATH" value="E:\UnrealEngine-5.3.2-source\Engine\Binaries\Win64\UnrealServer-Win64-Shipping.exe" />
-        <option name="WORKING_DIRECTORY" value="E:\UnrealEngine-5.3.2-source" />
+        <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/../UnrealEngine-5.3.2-source/Engine" />
+        <option name="CURRENT_LAUNCH_PROFILE" value="Local" />
+        <option name="EXECUTABLE_PATH" value="E:\UnrealEngine-5.3.2-source\Engine\Binaries\Win64\UnrealGame-Win64-Shipping.exe" />
         <option name="MANDATORY_PROGRAM_PARAMETERS" value="" />
         <option name="CUSTOM_PROGRAM_PARAMETERS" value="" />
+        <option name="WORKING_DIRECTORY" value="E:\UnrealEngine-5.3.2-source" />
         <option name="PASS_PARENT_ENVS" value="1" />
         <option name="USE_EXTERNAL_CONSOLE" value="0" />
         <option name="TERMINAL_INTERACTION_BEHAVIOR" value="FORCE_CONSOLE" />
       </configuration_15>
       <configuration_16>
-        <option name="CONFIGURATION" value="Shipping" />
+        <option name="CONFIGURATION" value="Test Client" />
         <option name="PLATFORM" value="Win64" />
-        <option name="EXECUTABLE_PATH" value="E:\UnrealEngine-5.3.2-source\Engine\Binaries\Win64\UnrealGame-Win64-Shipping.exe" />
-        <option name="WORKING_DIRECTORY" value="E:\UnrealEngine-5.3.2-source" />
+        <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/../UnrealEngine-5.3.2-source/Engine" />
+        <option name="CURRENT_LAUNCH_PROFILE" value="Local" />
+        <option name="EXECUTABLE_PATH" value="E:\UnrealEngine-5.3.2-source\Engine\Binaries\Win64\UnrealClient-Win64-Test.exe" />
         <option name="MANDATORY_PROGRAM_PARAMETERS" value="" />
         <option name="CUSTOM_PROGRAM_PARAMETERS" value="" />
+        <option name="WORKING_DIRECTORY" value="E:\UnrealEngine-5.3.2-source" />
         <option name="PASS_PARENT_ENVS" value="1" />
         <option name="USE_EXTERNAL_CONSOLE" value="0" />
         <option name="TERMINAL_INTERACTION_BEHAVIOR" value="FORCE_CONSOLE" />
       </configuration_16>
       <configuration_17>
-        <option name="CONFIGURATION" value="Test Client" />
+        <option name="CONFIGURATION" value="Test Server" />
         <option name="PLATFORM" value="Win64" />
-        <option name="EXECUTABLE_PATH" value="E:\UnrealEngine-5.3.2-source\Engine\Binaries\Win64\UnrealClient-Win64-Test.exe" />
-        <option name="WORKING_DIRECTORY" value="E:\UnrealEngine-5.3.2-source" />
+        <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/../UnrealEngine-5.3.2-source/Engine" />
+        <option name="CURRENT_LAUNCH_PROFILE" value="Local" />
+        <option name="EXECUTABLE_PATH" value="E:\UnrealEngine-5.3.2-source\Engine\Binaries\Win64\UnrealServer-Win64-Test.exe" />
         <option name="MANDATORY_PROGRAM_PARAMETERS" value="" />
         <option name="CUSTOM_PROGRAM_PARAMETERS" value="" />
+        <option name="WORKING_DIRECTORY" value="E:\UnrealEngine-5.3.2-source" />
         <option name="PASS_PARENT_ENVS" value="1" />
         <option name="USE_EXTERNAL_CONSOLE" value="0" />
         <option name="TERMINAL_INTERACTION_BEHAVIOR" value="FORCE_CONSOLE" />
       </configuration_17>
       <configuration_18>
-        <option name="CONFIGURATION" value="Test Server" />
+        <option name="CONFIGURATION" value="Test" />
         <option name="PLATFORM" value="Win64" />
-        <option name="EXECUTABLE_PATH" value="E:\UnrealEngine-5.3.2-source\Engine\Binaries\Win64\UnrealServer-Win64-Test.exe" />
-        <option name="WORKING_DIRECTORY" value="E:\UnrealEngine-5.3.2-source" />
+        <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/../UnrealEngine-5.3.2-source/Engine" />
+        <option name="CURRENT_LAUNCH_PROFILE" value="Local" />
+        <option name="EXECUTABLE_PATH" value="E:\UnrealEngine-5.3.2-source\Engine\Binaries\Win64\UnrealGame-Win64-Test.exe" />
         <option name="MANDATORY_PROGRAM_PARAMETERS" value="" />
         <option name="CUSTOM_PROGRAM_PARAMETERS" value="" />
+        <option name="WORKING_DIRECTORY" value="E:\UnrealEngine-5.3.2-source" />
         <option name="PASS_PARENT_ENVS" value="1" />
         <option name="USE_EXTERNAL_CONSOLE" value="0" />
         <option name="TERMINAL_INTERACTION_BEHAVIOR" value="FORCE_CONSOLE" />
       </configuration_18>
-      <configuration_19>
-        <option name="CONFIGURATION" value="Test" />
-        <option name="PLATFORM" value="Win64" />
-        <option name="EXECUTABLE_PATH" value="E:\UnrealEngine-5.3.2-source\Engine\Binaries\Win64\UnrealGame-Win64-Test.exe" />
-        <option name="WORKING_DIRECTORY" value="E:\UnrealEngine-5.3.2-source" />
-        <option name="MANDATORY_PROGRAM_PARAMETERS" value="" />
-        <option name="CUSTOM_PROGRAM_PARAMETERS" value="" />
-        <option name="PASS_PARENT_ENVS" value="1" />
-        <option name="USE_EXTERNAL_CONSOLE" value="0" />
-        <option name="TERMINAL_INTERACTION_BEHAVIOR" value="FORCE_CONSOLE" />
-      </configuration_19>
+      <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/../UnrealEngine-5.3.2-source/Engine" />
+      <option name="AUTO_SELECT_PRIORITY" value="10000" />
       <method v="2">
         <option name="Build" />
       </method>
@@ -607,7 +829,27 @@
       <updated>1713082072032</updated>
       <workItem from="1713082073824" duration="25000" />
       <workItem from="1713083005993" duration="12554000" />
-      <workItem from="1713364596016" duration="20974000" />
+      <workItem from="1713364596016" duration="24350000" />
+      <workItem from="1713684716425" duration="21650000" />
+      <workItem from="1713848114624" duration="2519000" />
+      <workItem from="1714143458874" duration="730000" />
+      <workItem from="1714181758182" duration="7285000" />
+      <workItem from="1714194940538" duration="84000" />
+      <workItem from="1714195084054" duration="182000" />
+      <workItem from="1714195347953" duration="63000" />
+      <workItem from="1714195457483" duration="81000" />
+      <workItem from="1714195573074" duration="9429000" />
+      <workItem from="1714724588464" duration="21521000" />
+      <workItem from="1714923414240" duration="3049000" />
+      <workItem from="1715511928388" duration="6406000" />
+      <workItem from="1715610357196" duration="110000" />
+      <workItem from="1715610671177" duration="855000" />
+      <workItem from="1715611647547" duration="5334000" />
+      <workItem from="1715664694560" duration="3345000" />
+      <workItem from="1715907771256" duration="847000" />
+      <workItem from="1715954018539" duration="3642000" />
+      <workItem from="1716128120269" duration="14630000" />
+      <workItem from="1716212987450" duration="11909000" />
     </task>
     <task id="LOCAL-00001" summary="至第7课 添加基础的动画蓝图">
       <option name="closed" value="true" />
@@ -625,17 +867,40 @@
       <option name="project" value="LOCAL" />
       <updated>1713369498265</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="finish section4">
+      <option name="closed" value="true" />
+      <created>1713627348417</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1713627348417</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="至第7课 添加基础的动画蓝图" />
     <MESSAGE value="第13号课程" />
-    <option name="LAST_COMMIT_MESSAGE" value="第13号课程" />
+    <MESSAGE value="finish section4" />
+    <option name="LAST_COMMIT_MESSAGE" value="finish section4" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="Uproject">
+        <watch expression="AbilitySystemComponent" language="C++" />
+        <watch expression="AbilitySystemComponent" language="C++" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
