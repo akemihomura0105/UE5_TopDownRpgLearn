@@ -21,9 +21,8 @@ class AURA_API ICombatInterface
 	GENERATED_BODY()
 
 public:
-	virtual int32 GetCombatLevel()
-	{
-		return 0;
-	};
+	virtual int32 GetCombatLevel();
+
+	virtual FVector GetCombatProjectileGenerateLocation();
 public:
 };

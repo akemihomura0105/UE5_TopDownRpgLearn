@@ -4,6 +4,7 @@
 #include "AuraCharacterBase.h"
 
 #include "AbilitySystemComponent.h"
+#include "Aura/AbilitySystem/AuraAbilitySystemComponent.h"
 
 
 AAuraCharacterBase::AAuraCharacterBase()
@@ -27,9 +28,22 @@ UAbilitySystemComponent* AAuraCharacterBase::GetAbilitySystemComponent() const
 
 void AAuraCharacterBase::InitializeAttribute() const
 {
+	if (!HasAuthority())
+	{
+		return;
+	}
+
 	InitializePrimaryAttribute();
 	InitializeSecondaryAttribute();
 	InitializeVitalAttribute();
+}
+
+void AAuraCharacterBase::AddStartupAbilities() const
+{
+	if (auto AuraAbilitySystemComponent = Cast<UAuraAbilitySystemComponent>(GetAbilitySystemComponent()))
+	{
+		AuraAbilitySystemComponent->AddAbilities(StartupAbilities);
+	}
 }
 
 void AAuraCharacterBase::InitializePrimaryAttribute() const

@@ -6,6 +6,7 @@
 #include "AbilitySystemComponent.h"
 #include "Aura/AbilitySystem/AuraAbilitySystemComponent.h"
 #include "Aura/Player/AuraPlayerState.h"
+#include "Engine/SkeletalMeshSocket.h"
 #include "GameFramework/CharacterMovementComponent.h"
 
 // Sets default values
@@ -32,12 +33,18 @@ int32 AAuraCharacter::GetCombatLevel()
 	return AuraPlayerState->GetCombatLevel();
 }
 
+FVector AAuraCharacter::GetCombatProjectileGenerateLocation()
+{
+	check(Weapon);
+	return Weapon->GetSocketByName(WeaponTipName)->GetSocketLocation(Weapon);
+}
+
 void AAuraCharacter::InitAbilityActorInfo()
 {
 	auto AuraPlayerState = GetPlayerState<AAuraPlayerState>();
 	check(AuraPlayerState);
 	AbilitySystemComponent = AuraPlayerState->GetAbilitySystemComponent();
-	AbilitySystemComponent->InitAbilityActorInfo(this, AuraPlayerState);
+	AbilitySystemComponent->InitAbilityActorInfo(AuraPlayerState, this);
 	Cast<UAuraAbilitySystemComponent>(AbilitySystemComponent)->OnActorInfoSet();
 	AttributeSet = AuraPlayerState->GetAttributeSet();
 }
@@ -46,10 +53,11 @@ void AAuraCharacter::PossessedBy(AController* NewController)
 {
 	Super::PossessedBy(NewController);
 
-	if (GetLocalRole() == ROLE_Authority)
+	if (HasAuthority())
 	{
 		InitAbilityActorInfo();
 		InitializeAttribute();
+		AddStartupAbilities();
 	}
 }
 
@@ -57,6 +65,8 @@ void AAuraCharacter::OnRep_PlayerState()
 {
 	Super::OnRep_PlayerState();
 
+	auto AuraPlayerState = GetPlayerState<AAuraPlayerState>();
+	auto NetMode = AuraPlayerState->GetLocalRole();
 	InitAbilityActorInfo();
 }
 

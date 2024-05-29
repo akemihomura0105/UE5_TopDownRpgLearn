@@ -22,6 +22,7 @@ public:
 	virtual UAbilitySystemComponent* GetAbilitySystemComponent() const override;
 	virtual void BeginPlay() override;
 	virtual int32 GetCombatLevel() override;
+	virtual FVector GetCombatProjectileGenerateLocation() override;
 protected:
 	virtual void InitAbilityActorInfo() override;
 	

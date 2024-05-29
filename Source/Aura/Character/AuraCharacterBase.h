@@ -8,6 +8,7 @@
 #include "GameFramework/Character.h"
 #include "AuraCharacterBase.generated.h"
 
+class UGameplayAbility;
 class UGameplayEffect;
 
 UCLASS(Abstract)
@@ -29,6 +30,9 @@ protected:
 	UPROPERTY(EditAnywhere, Category = "Combat")
 	TObjectPtr<USkeletalMeshComponent> Weapon;
 
+	UPROPERTY(EditAnywhere, Category = "Combat")
+	FName WeaponTipName;
+
 	UPROPERTY(EditAnywhere)
 	TSubclassOf<UGameplayEffect> InitializePrimaryAttributeGameplayEffect;
 
@@ -37,11 +41,18 @@ protected:
 
 	UPROPERTY(EditAnywhere)
 	TSubclassOf<UGameplayEffect> InitializeVitalAttributeGameplayEffect;
+
+	UPROPERTY(EditAnywhere)
+	TArray<TSubclassOf<UGameplayAbility>> StartupAbilities;
+	
 	// [Server]
 	void InitializeAttribute() const;
+
+	void AddStartupAbilities() const;
 	
 	void ApplyGameplayEffectToSelf(TSubclassOf<UGameplayEffect> GEClass, float Level) const;
-	
+
+		
 private:
 	void InitializePrimaryAttribute() const;
 	void InitializeSecondaryAttribute() const;
